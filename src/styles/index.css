@@ -1,12 +1,105 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgrey;
+    border-radius: 5px;
+    box-shadow: 0 0 5px;
+    padding:20px;
+    text-align: center;
+    z-index: 1;
+    font-size: 3em;
+    width: 650px;
+    height: 350px;
+    gap: 30px;
+    font-family:'Permanent Marker',cursive;
 
-/* 
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.container h1 {
+    font-size: 1.05em;
+}
 
-*/
+html,body {
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgN6bX7PLVRuY9RSvLl2roObBtUEbmNPrjQEgSe-HsLIfcszD48NrVGpSmDI0lpdbwWOoN3D9qFf9ifkREmxyhUY0rwcU38ICVUzBCIykzGKvJOkG0wwq456EIXoM_v_n1Q7uVCefmfwsli4n6YknyoPiJZBhOluBmCx_927mT3ruFngx0vTRTXk4ybgg/s1600-rw/beeautiful-sunset-illustration-1212023.png);
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+    filter: blur(8px); /* Aplica el desenfoque */
+    z-index: -1; /* Coloca la imagen de fondo detrás de otros elementos */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.digit-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.clock-icon {
+    margin-right: 20px;
+    font-size: 1.3em;
+}
+
+.digit {
+    font-size: 3rem; /* Tamaño grande para los dígitos */
+    font-weight: bold; /* Hacer los dígitos más gruesos */
+    color: #333; /* Color oscuro para los números */
+    background-color: #f2f2f2; /* Fondo claro para los dígitos */
+    padding: 10px 15px; /* Espaciado interno para dar espacio alrededor de cada dígito */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra para dar profundidad */
+}
+
+
+
+.controls {
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    font-size: 3rem;
+    margin-top: 30px;
+}
+
+.controls button {
+    font-size: 1.1rem; /* Aumenta el tamaño del texto dentro de los botones */
+    padding: 15px 30px; /* Aumenta el tamaño de los botones */
+    background-color: lightslategray; /* Color de fondo del botón */
+    color: black; /* Color del texto en los botones */
+    border: none; /* Elimina el borde por defecto */
+    border-radius: 10px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: all 0.3s ease-in-out; /* Transición suave para todas las propiedades */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil para los botones */
+}
+
+.controls button:hover {
+    background-color: #2980b9; /* Cambia el color de fondo al pasar el ratón */
+    transform: scale(1.1); /* Aumenta el tamaño del botón cuando se pasa el ratón */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más intensa al hacer hover */
+}
+
+.controls button:active {
+    transform: scale(1); /* Restaura el tamaño normal al hacer clic */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra más suave al hacer clic */
+}
+
