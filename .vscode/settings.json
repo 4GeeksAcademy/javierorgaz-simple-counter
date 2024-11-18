@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "workbench.editorAssociations": {
@@ -8,3 +9,11 @@
   "files.autoSaveDelay": 700,
   "editor.minimap.enabled": false
 }
+=======
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "workbench.editorAssociations": {   
+        "*.md": "vscode.markdown.preview.editor"
+    }
+}
+>>>>>>> e9fdb803c16848899dc1189b23a745d61ac9c622
